@@ -125,11 +125,18 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.item .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   color: var(--text-color);
 }
 
-.nav .nav-link:hover,
-.nav .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 
@@ -141,13 +148,6 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
-.item .nav-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
 /* герой */
 
 .hero {
@@ -156,9 +156,11 @@ p {
   padding-bottom: 218px;
   max-width: 1600px;
   margin: auto;
-  background-image:
-  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(../images/hero.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,7 +206,7 @@ p {
 .button:hover,
 .button:focus {
   color: var(--white-color);
-  background-color: #2f303a;
+  background-color: #188ce8;
 }
 
 /* секції */
@@ -247,13 +249,12 @@ p {
 
 .div-icon {
   display: flex;
-background-color: #F5F4FA;
-border-radius: 4px;
-justify-content: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-height: 120px;
-margin-bottom: 30px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 
 /* чим займаємося */
@@ -318,9 +319,6 @@ margin-bottom: 30px;
   padding-bottom: 30px;
 }
 
-/* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2); */
-
 
 .team .title-item {
   margin-bottom: 10px;
@@ -333,36 +331,27 @@ margin-bottom: 30px;
   margin-top: 16px;
 }
 
-.social-link{
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #FFFFFF;
-  outline: none
+  color: #afb1b8;
+  background-color: #ffffff;
+  outline: none;
 }
-color: #AFB1B8;
 
 .social-icon {
-  fill: #AFB1B8;
-  height: 20px;
+  fill: currentColor;
 }
-
-/* fill="#afb1b8" */
 
 .social-link:hover,
 .social-link:focus {
-  color: #FFFFFF;
-  background-color: #2196F3;
-} 
-
-.social-icon:hover svg,
-.social-icon:focus svg {
-  fill: #FFFFFF;
+  color: #ffffff;
+  background-color: #2196f3;
 }
- 
 
 /* Постійні клієнти */
 
@@ -371,7 +360,6 @@ color: #AFB1B8;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  
 }
 
 .logo-link {
@@ -380,16 +368,16 @@ color: #AFB1B8;
   align-items: center;
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: #AFB1B8;
-  outline: none
+  color: #afb1b8;
+  outline: none;
 }
 
 .logo-link:hover,
 .logo-link:focus {
   border-color: var(--accent-color);
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .logo-icon {
@@ -400,12 +388,13 @@ color: #AFB1B8;
 
 .portfolio-link {
   display: block;
-  outline: none
+  outline: none;
 }
 
 .portfolio-link:hover,
 .portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .container .list {
@@ -472,7 +461,7 @@ color: #AFB1B8;
   min-height: 38px;
   border: transparent;
   padding: 6px 22px;
-  outline: none
+  outline: none;
 }
 
 .list-btn .item:not(:last-child) {
@@ -496,6 +485,10 @@ color: #AFB1B8;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-div {
+  display: flex;
 }
 
 .logo-footer {
@@ -530,16 +523,15 @@ color: #AFB1B8;
   margin-bottom: 9px;
 }
 
-.social-footer{
+
+.social-footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   margin-top: 20px;
+  gap: 10px;
 }
 
 
-.social-link-footer{
+.social-link-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -548,14 +540,13 @@ color: #AFB1B8;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-color);
-  outline: none
+  outline: none;
 }
 
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: var(--accent-color);
 }
-
 
 /* прихований заголовок */
 
