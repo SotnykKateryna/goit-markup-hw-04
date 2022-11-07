@@ -319,7 +319,6 @@ p {
   padding-bottom: 30px;
 }
 
-
 .team .title-item {
   margin-bottom: 10px;
 }
@@ -523,13 +522,15 @@ p {
   margin-bottom: 9px;
 }
 
+.div-footer {
+  margin-right: 70px;
+}
 
 .social-footer {
   display: flex;
   margin-top: 20px;
   gap: 10px;
 }
-
 
 .social-link-footer {
   display: flex;
